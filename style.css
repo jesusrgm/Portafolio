@@ -1,0 +1,148 @@
+html *{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+  
+}
+
+/*Desktop*/
+@media(min-width:900px){
+  .navi{
+      grid-template-columns: auto;
+      grid-template-areas: 
+      "face insta tiktok";
+  }
+  .navi2{
+      grid-template-columns: auto;
+      grid-template-areas: 
+      "inicio contacto";
+  }
+}
+
+/*Telefono*/
+.navi{
+  display: grid;
+  gap: 10px;
+  grid-template-areas: 
+  "face"
+  "insta"
+  "tiktok";
+}
+.navi2{
+  display: grid;
+  gap: 10px;
+  grid-template-areas: 
+  "inicio"
+  "contacto";
+}
+td.fitwidth{ width:1px}
+/*Tablet*/
+@media(max-width:1024px) and (min-width:900px){
+  .navi{
+      grid-template-columns: auto;
+      grid-template-areas: 
+      "face insta"
+      "tiktok tiktok";
+  }
+  .navi2{
+      grid-template-columns: auto;
+      grid-template-areas: 
+      "inicio inicio"
+      "contacto contacto";
+  }
+}
+a{
+    font-family:fantasy;
+    font-size: 36px;
+    color: rgb(23, 99, 74);
+    text-decoration: none;
+}
+header{
+    background-color:rgb(58, 181, 181);
+    position: fixed;
+    /*position hace referencia mi posicion de mi elemento y
+     tiene 5 valores fixed,static, relative, absolute, sticky*/
+   left: 0%;
+   top: 0;
+   width: 100%;
+   padding: 20px 100px; /*Darle un espacio alto, ancho*/
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   /*z-index: index 100; para posicionar un elemento sobre otro- 
+   el que tenga mayor numero va a ser el que va a estar adelante*/
+   }
+   nav a{
+    position: relative;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+  }
+  nav a::before{
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color:black;
+    transition: 0.3s;
+
+   }
+   body{
+    /*background-color: rgba(54, 218, 218, 0.452);*/
+    background-image: url(Imagen\ de\ What.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    left: 0%;
+   top: 0;
+   width: 70%;
+   padding: 20px 70px; /*Darle un espacio alto, ancho*/
+   justify-content: space-evenly;
+   z-index: index 100;
+   margin-bottom: 40px;
+   align-items: center;
+   }
+   
+
+   
+   .card{
+    margin-top: 100px;
+    background-color:rgb(58, 181, 181);
+    float:none;
+  
+   }
+   .card-img-top{
+    
+    display: block;
+    margin-left: auto;  
+    margin-right: auto;
+    width: 80%;}
+
+    .card-text{
+  
+        text-align: center;
+        position:static;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+        
+    }
+    .card-title{
+text-align: center;
+    }
+    footer{
+      float: inline-end;
+      align-items: center;
+
+    }
+
+
+    
+    
+      
+      
